@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/stimulation_bg"
+        android:layout_width="377dp"
+        android:layout_height="418dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleStimulation"
+        app:srcCompat="@drawable/stimulation_bg" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="212dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginStart="96dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="display"
+        android:text="CALL TO ACTION"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titleStimulation"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:text="STIMULATION"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="51sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="103dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginStart="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bulogo" />
+</android.support.constraint.ConstraintLayout>

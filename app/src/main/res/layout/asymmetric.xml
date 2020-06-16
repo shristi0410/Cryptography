@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <ScrollView
+        android:layout_width="397dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/bulogo"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/textSymmetricTitle"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="@string/Asymmetric"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/basic"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/asystep1"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/step1content"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:text="@string/substep1"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:text="@string/substep2"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/publickey"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/publicKey"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="?attr/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="15dp"
+                android:text="@string/privatekey"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/privateKey"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="?attr/colorAccent" />
+
+            <Button
+                android:id="@+id/generateKeys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="Generate Keys" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/asystep2"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/sub2step2"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/msg"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/msgSym"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:hint="Message"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="?attr/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="15dp"
+                android:text="@string/encrptionKey"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/encryptionKey"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="?attr/colorAccent" />
+
+            <Button
+                android:id="@+id/encodeMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="Encode Message" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/Encrypted"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/encryptedMsg"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/asystep3"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/step3content"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="15dp"
+                android:text="@string/decryptionkey"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/dencryptionKey"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="?attr/colorAccent" />
+
+            <Button
+                android:id="@+id/decodeMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="Decode Message" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/decrypted"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/decryptedMsg"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text=" " />
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

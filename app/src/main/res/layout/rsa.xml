@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/bulogo"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/textRsaTitle"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:text="@string/RSA"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/rasstep1"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:text="@string/rsacontent1"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textP"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/p"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/generatedP"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textQ"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="@string/q"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/generatedQ"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/generatePQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="Generate P and Q" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="@string/rsastep2"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:text="@string/rsacontent2"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textN"
+                    android:layout_width="191dp"
+                    android:layout_height="58dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/n"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textPQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/pq"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/generatedN"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textPHI"
+                    android:layout_width="191dp"
+                    android:layout_height="58dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/phi"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textPQ2"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/pq2"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/generatedPHI"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textE"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/e"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/generatedE"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/generateNPHIE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="Generate N, PHI and Q" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/rsastep3"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:text="@string/rsacontent3"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textD"
+                    android:layout_width="191dp"
+                    android:layout_height="58dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/d"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textDE"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/den"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/generatedD"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/publicKey"
+                    android:layout_width="191dp"
+                    android:layout_height="58dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/publickey"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textNE"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/ne"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/generatedPublicKey"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/privateKey"
+                    android:layout_width="191dp"
+                    android:layout_height="58dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/privatekey"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textND"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/nd"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/generatedPrivateKey"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/generatekeys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="Generate Keys" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/rsastep4"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:text="@string/rsacontent4"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textMsg"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/msg"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/msgSym"
+                    android:layout_width="346dp"
+                    android:layout_height="42dp"
+                    android:background="#FFABA5A5"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:textColor="?attr/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/plusOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:background="@color/colorAccent"
+                        android:onClick="onClick"
+                        app:srcCompat="@android:drawable/arrow_up_float" />
+
+                    <ImageButton
+                        android:id="@+id/SubtractOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:background="@color/colorAccent"
+                        android:onClick="onClick"
+                        app:srcCompat="@android:drawable/arrow_down_float" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textEncrypt"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/Encrypted"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/generatedEncrypt"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textDecrypt"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/decrypted"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/generatedDecrypt"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#FFABA5A5"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/encryptDecrypt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="Encrypt/Decrypt" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text=" " />
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

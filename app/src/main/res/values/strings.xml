@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">Cryptography</string>
+    <string name="title_home">Home</string>
+    <string name="title_aim">Aim</string>
+    <string name="title_theory">Theory</string>
+    <string name="title_procedure">Procedure</string>
+    <string name="title_stimulation">Stimulation</string>
+    <string name="welcome">Welcome To The World Of</string>
+    <string name="Title">CRYPTOGRAPHY</string>
+    <string name="Content1">Demonstrating cryptography techniques in ensuring network security</string>
+    <string name="Content2">Cryptography, a word with Greek origins, means "secret writing."</string>
+
+    <string name="Content3"><u>Cryptography Components</u></string>
+    <string name="smallHeading1"><u>Plaintext and Ciphertext</u></string>
+    <string name="plainContent">The original message, before being transformed, is called plaintext. After the message is transformed, it is called ciphertext. An encryption algorithm transforms the plaintext into ciphertext; a decryption algorithm transforms the ciphertext back into plaintext.</string>
+    <string name="smallHeading2"><u>Cipher</u></string>
+    <string name="cipherContent">Encryption and decryption algorithms as ciphers. The term cipher is also used to refer to different categories of algorithms in cryptography.</string>
+    <string name="smallHeading3"><u>Key</u></string>
+    <string name="keyContent">A key is a number (or a set of numbers) that the cipher, as an algorithm, operates on.</string>
+
+    <string name="Content4"><u>Categories of Cryptography</u></string>
+    <string name="smallHeading4"><u>Symmetric key (also called secret-key) cryptography algorithms</u></string>
+    <string name="symmetricContent">In symmetric-key cryptography, the same key is used by both parties. The sender uses this key and an encryption algorithm to encrypt data; the receiver uses the same key and the corresponding decryption algorithm to decrypt the data. In symmetric-key cryptography, the same key is used by the sender (for encryption) and the receiver (for decryption)</string>
+    <string name="example">Examples</string>
+    <string name="eg1">-XOR Cipher</string>
+    <string name="eg2">-Data Encryption Standard (DES)</string>
+    <string name="eg3">-Advanced Encryption Standard (AES)</string>
+    <string name="smallHeading5"><u>Asymmetric (also called public-key) cryptography algorithms</u></string>
+    <string name="asymmetricContent">In asymmetric or public-key cryptography, there are two keys: a private key and a public key. The private key is kept by the receiver. The public key is announced to the public.</string>
+    <string name="eg4">-RSA</string>
+    <string name="eg5">-Diffie-Hellman</string>
+
+    <string name="Content5"><u>RSA Algorithm</u></string>
+    <string name="rsa1">-The most common public key algorithm is RSA, named for its inventors Rivest, Shamir, and Adleman (RSA). It uses two numbers, e and d, as the public and private keys</string>
+    <string name="rsa2">-In RSA, e and n are announced to the public; d and Φ (PHI) are kept secret.</string>
+    <string name="rsa3">-Steps to select the private and public keys:</string>
+    <string name="step1">1.Bob chooses two very large prime numbers p and q.</string>
+    <string name="step2">2.Bob multiplies the above two primes to find n, the modulus for encryption and decryption. n = p X q.</string>
+    <string name="step3">3.Bob calculates another number Փ = (p -1) X (q - 1).</string>
+    <string name="step4">4.Bob chooses a random integer e. He then calculates d so that d x e=1 mod Փ .</string>
+    <string name="step5">5.Bob announces e and n to the public; he keeps Փ and d secret.</string>
+    <string name="smallHeading6"><u>Encryption</u></string>
+    <string name="encryptionContent">Anyone who needs to send a message to Bob can use n and e. For example, if Alice needs to send a message to Bob, she can change the message, usually a short one, to an integer. This is the plaintext. She then calculates the ciphertext, using e and n. C = P^e ( mod n ) Alice sends C, the ciphertext, to Bob.</string>
+    <string name="smallHeading7"><u>Decryption</u></string>
+    <string name="decryptionContent">Bob keeps Փ and d private. When he receives the ciphertext, he uses his private key d to decrypt the message: P = C^d ( mod n )</string>
+    <string name="smallHeading8"><u>Restriction</u></string>
+    <string name="ristrictionContent">For RSA to work, the value of P must be less than the value of n. If P is a large number, the plaintext needs to be divided into blocks to make P less than n</string>
+
+    <string name="steps"><u>Steps:</u></string>
+    <string name="pro1">1.The aim is to demonstrate and understand how different algorithms of cryptography works.</string>
+    <string name="pro2">2.To perform the experiment follow the below steps.</string>
+    <string name="pro3">3.The first algorithm gives you the basic understanding of how assymeteric cryptography works.</string>
+    <string name="pro4">4.Click on the Generate Keys button to generate your Random keys.</string>
+    <string name="pro5">5.Then type the message you want to encrypt along with the public key in the encryption key box and then press Encode message button.</string>
+    <string name="pro6">6.Then enter your private key in the description key box to see the decrypted message which would be the same as your original message</string>
+    <string name="pro7">7.Also try entering false private key and you will observe that the message is not deecrypted successfully and is different from your original message</string>
+    <string name="pro8">8.The second algorithm is about a very famous algorithm - RSA Algorithm</string>
+    <string name="pro9">9.Click on the generate prime numbers to generate random prime nnumbers.</string>
+    <string name="pro10">10.Then click on Generate N, PHI, E button to generate the respective values</string>
+    <string name="pro11">11.Click on Generate Keys button to generate your keys.</string>
+    <string name="pro12">12.Then in the next step enter the message ( numeric ) you want to encrypt.</string>
+    <string name="pro13">13.You will observe that on pressing the Encrypt/Decrypt the original message ( Message ) is same as the decrypted message.</string>
+    <string name="pro14">14.If all the steps are performed correctly then Experiment is successful</string>
+    <string name="pro15">15.Else Need to do it again</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_stimulation">StimulationActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main_stimulation">MainStimulationActivity</string>
+    <string name="tab_text_1">Symmetric</string>
+    <string name="tab_text_2">Asymmetric</string>
+    <string name="tab_text_3">RSA</string>
+
+
+    <string name="msg">Message :</string>
+    <string name="Encrypted">Encrypted Message :</string>
+    <string name="decrypted">Decrypted Message :</string>
+    <string name="publickey">Public Key :</string>
+    <string name="privatekey">Private Key :</string>
+
+
+
+    <string name="Symmetric"><u>Symmetric-Key Cryptography</u></string>
+    <string name="xor"><u>XOR-Encryption/Decryption</u></string>
+    <string name="symstep1"><u>Step 1: Enter your message and your secret key</u></string>
+    <string name="secret">Secret Key :</string>
+    <string name="symstep2"><u>Step 2: Generate Decrypted Message</u></string>
+    <string name="yourKey">Your Secret Key :</string>
+
+
+
+
+
+    <string name="Asymmetric"><u>Asymmetric-Key Cryptography</u></string>
+    <string name="basic"><u>Basic Encryption/Decryption</u></string>
+    <string name="asystep1"><u>Step 1: Generate Keys</u></string>
+    <string name="step1content">Press the button to generate a pair of randomly chosen keys.</string>
+    <string name="substep1">~The <b>public key</b> will be posted in a public key repository where anyone can find it.</string>
+    <string name="substep2">~The <b>private key</b> should be known only to you.</string>
+
+    <string name="asystep2"><u>Step 2: Encrypt the Message</u></string>
+    <string name="sub2step2">Now type in a short message and enter one of the keys from above. Then press the button.</string>
+    <string name="encrptionKey">Encryption Key :</string>
+    <string name="asystep3"><u>Step 3: Decrypt the Message</u></string>
+    <string name="step3content">Now enter the decryption key ( other than the one you used to encrypt) to see the decrypted message And press the "Decode" button.</string>
+    <string name="decryptionkey">Decryption Key :</string>
+
+
+
+
+
+
+    <string name="RSA"><u>RSA Algorithm</u></string>
+    <string name="rsacontent1">Press the button to generate a pair of randomly chosen Prime Numbers.</string>
+    <string name="rasstep1"><u>Step 1: Generate Prime Numbers P and Q</u></string>
+    <string name="p">P :</string>
+    <string name="q">Q :</string>
+    <string name="rsastep2"><u>Step 2: Generate N, PHI and E</u></string>
+    <string name="rsacontent2">Press the button to generate the values</string>
+    <string name="n">N :</string>
+    <string name="phi">PHI :</string>
+    <string name="e">E :</string>
+    <string name="pq">P * Q</string>
+    <string name="pq2">(P-1) * (Q-1)</string>
+    <string name="rsastep3"><u>Step 3: Generate Public and Private Key</u></string>
+    <string name="rsacontent3">Press the button to generate the values</string>
+    <string name="d">D :</string>
+    <string name="den">D * E = 1 mod N</string>
+    <string name="ne">(N,E)</string>
+    <string name="nd">(N,D)</string>
+    <string name="rsastep4"><u>Step 4: Encryption/Decryption</u></string>
+    <string name="rsacontent4">Press the button to generate the values</string>
+
+
+
+
+
+</resources>
